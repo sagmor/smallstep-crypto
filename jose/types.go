@@ -1,4 +1,4 @@
-// Package jose is a wrapper for gopkg.in/square/go-jose.v2 and implements
+// Package jose is a wrapper for github.com/go-jose/go-jose/v3 and implements
 // utilities to parse and generate JWT, JWK and JWKSets.
 package jose
 
@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
+	jose "github.com/go-jose/go-jose/v3"
+	"github.com/go-jose/go-jose/v3/cryptosigner"
+	"github.com/go-jose/go-jose/v3/jwt"
 	"go.step.sm/crypto/x25519"
-	jose "gopkg.in/square/go-jose.v2"
-	"gopkg.in/square/go-jose.v2/cryptosigner"
-	"gopkg.in/square/go-jose.v2/jwt"
 )
 
 // SupportsPBKDF2 constant to know if the underlaying library supports

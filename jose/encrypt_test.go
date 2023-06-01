@@ -11,10 +11,10 @@ import (
 	"reflect"
 	"testing"
 
+	jose "github.com/go-jose/go-jose/v3"
 	"github.com/pkg/errors"
 	"github.com/smallstep/assert"
 	"go.step.sm/crypto/randutil"
-	jose "gopkg.in/square/go-jose.v2"
 )
 
 var testPassword = []byte("Supercalifragilisticexpialidocious")
